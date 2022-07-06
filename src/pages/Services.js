@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Routes, Route } from "react-router-dom";
+import { Link, Routes, Route, Outlet } from "react-router-dom";
 import Automation from "./Services/Automation";
 
 const Service = [
@@ -24,9 +24,7 @@ const Services = () => {
           })}
         </ul>
       </div>
-      <Routes>
-        <Route path="/automation" element={<Automation />} />
-      </Routes>
+      <Outlet />
     </>
   );
 };

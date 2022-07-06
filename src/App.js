@@ -8,14 +8,6 @@ import Group from "./pages/Group";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 
-// onst NavItems = [
-//   { icon: "", name: "Asosiy", link: "/" },
-//   { icon: "", name: "Biz haqimizda", link: "/about" },
-//   { icon: "", name: "Mijozlar", link: "/customers" },
-//   { icon: "", name: "Jamoa", link: "/group" },
-//   { icon: "", name: "Xizmatlar", link: "/services" },
-//   { icon: "", name: "Aloqa", link: "/contact" },
-
 function App() {
   return (
     <>
@@ -25,7 +17,14 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/customers" element={<Customers />} />
         <Route path="/group" element={<Group />} />
-        <Route path="/services" element={<Services />} />
+
+        <Route path="/services" element={<Services />}>
+          <Route path="iptelephony" element={<h1>Hello iptelephony</h1>} />
+          <Route path="siteservices" element={<h1>Hello siteservices</h1>} />
+          <Route path="mobileapps" element={<h1>Hello mobileapps</h1>} />
+          <Route path="marketing" element={<h1>Hello marketing</h1>} />
+          <Route path="automation" element={<h1>Hello automation</h1>} />
+        </Route>
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
