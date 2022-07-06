@@ -1,7 +1,7 @@
 import "./App.css";
 import Home from "./pages/Home";
 import Navbar from "./pages/Navbar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Customers from "./pages/Customers";
 import Group from "./pages/Group";

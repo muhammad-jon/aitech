@@ -1,6 +1,5 @@
 import React from "react";
-import { Link, Routes, Route, Outlet } from "react-router-dom";
-import Automation from "./Services/Automation";
+import { Link, Outlet } from "react-router-dom";
 
 const Service = [
   { link: "automation", name: "Avtomatlashtirish" },
